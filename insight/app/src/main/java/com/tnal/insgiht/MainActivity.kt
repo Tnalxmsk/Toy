@@ -1,11 +1,18 @@
 package com.tnal.insgiht
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.setupWithNavController
+import com.tnal.insgiht.base.BaseActivity
+import com.tnal.insgiht.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
+
+    override fun setLayout() {
+        val bottomNavigationView = binding.bottomNavigationMain
+        val navController =
+            supportFragmentManager.findFragmentById(R.id.container_main)?.findNavController()
+        navController?.let {
+            bottomNavigationView.setupWithNavController(it)
+        }
     }
 }
