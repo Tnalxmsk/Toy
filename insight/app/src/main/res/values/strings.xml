@@ -6,4 +6,13 @@
     <string name="description_note_plus_button">노트 추가 버튼</string>
     <string name="label_note_title">노트 제목</string>
     <string name="label_note_summary">노트 한 줄 요약</string>
+    <string name="text_note_title">노트 제목</string>
+    <string name="hint_write_title">노트의 제목을 입력하세요!</string>
+    <string name="text_what_content">어떤 내용이었나요?</string>
+    <string name="hint_write_content">기사의 내용을 요약해 작성해 주세요!</string>
+    <string name="text_my_think">나의 생각</string>
+    <string name="hint_write_my_think">기사에 대한 나의 생각을 입력해 주세요!</string>
+    <string name="text_summary">한 줄 요약</string>
+    <string name="hint_write_summary">한 줄로 요약한 나의 생각을 작성해 주세요!</string>
+    <string name="label_write_complete">완료</string>
 </resources>

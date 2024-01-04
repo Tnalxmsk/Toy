@@ -19,5 +19,14 @@
         android:id="@+id/navigation_note"
         android:name="com.tnal.insgiht.ui.NoteFragment"
         android:label="NoteFragment"
-        tools:layout="@layout/fragment_note"/>
+        tools:layout="@layout/fragment_note">
+        <action
+            android:id="@+id/action_note_to_note_write"
+            app:destination="@id/navigation_note_write" />
+    </fragment>
+    <activity
+        android:id="@+id/navigation_note_write"
+        android:name="com.tnal.insgiht.ui.NoteWriteActivity"
+        android:label="NoteWriteActivity"
+        tools:layout="@layout/activity_note_write"/>
 </navigation>

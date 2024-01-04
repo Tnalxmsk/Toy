@@ -2,6 +2,7 @@ package com.tnal.insgiht.ui
 
 import android.os.Bundle
 import android.view.View
+import androidx.navigation.fragment.findNavController
 import com.tnal.insgiht.R
 import com.tnal.insgiht.base.BaseFragment
 import com.tnal.insgiht.data.model.Note
@@ -18,6 +19,11 @@ class NoteFragment : BaseFragment<FragmentNoteBinding>(R.layout.fragment_note) {
         val adapter = NoteAdapter()
         adapter.add(createItems())
         binding.rvNoteList.adapter = adapter
+
+        binding.btnNoteAdd.setOnClickListener {
+            val action = NoteFragmentDirections.actionNoteToNoteWrite()
+            findNavController().navigate(action)
+        }
     }
 
     private fun createItems(): List<Note> {
