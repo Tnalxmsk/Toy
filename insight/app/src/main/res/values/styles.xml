@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="App.Toolbar" parent="Widget.Material3.Toolbar" >
+        <item name="titleCentered">true</item>
+    </style>
+
+    <style name="App.Toolbar.Navigation">
+        <item name="navigationIcon">@drawable/ic_back_arrow</item>
+    </style>
+
+    <style name="AppEditText">
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>
